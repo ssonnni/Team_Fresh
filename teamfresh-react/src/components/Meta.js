@@ -1,13 +1,15 @@
 import React from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
+const Favicon = require("../assets/img/favicon.png");
+
 const Meta = (props) => {
   return (
     <HelmetProvider>
       <Helmet>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>{props.title}</title>
+        <title>팀프레시</title>
         {/* SEO 태그 */}
         <meta name="description" content={props.description} />
         <meta name="keywords" content={props.keywords} />
@@ -17,6 +19,7 @@ const Meta = (props) => {
         <meta property="og:description" content={props.description} />
         <meta property="og:image" content={props.image} />
         <meta property="og:url" content={props.url} />
+        <link rel="icon" href={Favicon}></link>
       </Helmet>
     </HelmetProvider>
   );
@@ -33,7 +36,7 @@ Meta.defaultProps = {
     window.location.hostname +
     ":" +
     window.location.port +
-    "/logo512.png",
+    "../",
 
   url: window.location.href,
 };
