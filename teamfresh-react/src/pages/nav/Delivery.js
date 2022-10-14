@@ -115,7 +115,7 @@ const Delivery = () => {
     const searchDeliveryArea =  async () => {
       try {
         let addrBasic = document.querySelector('#roadAddress').value;
-        const res =  await fetch('https://tmsapidev.teamfresh.co.kr/api/delivery/searchDeliveryAreaForTest',{
+        const res =  await fetch('tmsapidev.teamfresh.co.kr/api/delivery/searchDeliveryAreaForTest',{
             method: 'POST',
             headers: {
                 'Host': 'https://tmsapidev.teamfresh.co.kr',
