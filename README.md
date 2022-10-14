@@ -13,11 +13,11 @@
   - Delivery.js
 
 ### components/
-*Meta.js
-*[header components](https://github.com/ssonnni/Team_Fresh/tree/main/teamfresh-react/src/components/header)
+* Meta.js
+* [header components](https://github.com/ssonnni/Team_Fresh/tree/main/teamfresh-react/src/components/header)
     - Header.js
     -  Nav.js
-*[main components](https://github.com/ssonnni/Team_Fresh/tree/main/teamfresh-react/src/components/main)
+* [main components](https://github.com/ssonnni/Team_Fresh/tree/main/teamfresh-react/src/components/main)
     - Main.js
     - MainCarousel.js
     - MainIntroduce.js
@@ -25,18 +25,18 @@
     - MainService.js
     - MainPoint.js
     - MainLink.js
-*[footer components](https://github.com/ssonnni/Team_Fresh/tree/main/teamfresh-react/src/components/footer)
+* [footer components](https://github.com/ssonnni/Team_Fresh/tree/main/teamfresh-react/src/components/footer)
     - Footer.js
     - 
 ### assets/
-*[img](https://github.com/ssonnni/Team_Fresh/tree/main/teamfresh-react/src/assets/img)
-*[styles](https://github.com/ssonnni/Team_Fresh/tree/main/teamfresh-react/src/assets/styles)
+* [img](https://github.com/ssonnni/Team_Fresh/tree/main/teamfresh-react/src/assets/img)
+* [styles](https://github.com/ssonnni/Team_Fresh/tree/main/teamfresh-react/src/assets/styles)
     - GlobalStyles.js
     - Title.js
 
 ## 02. 새벽배송 가능 지역 여부 페이지를 구현
 
-### *[Delivery.js](https://github.com/ssonnni/Team_Fresh/blob/main/teamfresh-react/src/pages/nav/Delivery.js)
+#### *[Delivery.js](https://github.com/ssonnni/Team_Fresh/blob/main/teamfresh-react/src/pages/nav/Delivery.js)
 - [delivery components](https://github.com/ssonnni/Team_Fresh/tree/main/teamfresh-react/src/pages/nav/delivery)
 
 
