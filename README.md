@@ -3,9 +3,9 @@
 ## src 폴더 구조
 ### pages
 
-- [메인 페이지](https://github.com/ssonnni/Team_Fresh/tree/main/teamfresh-react/src/pages)
+* [메인 페이지](https://github.com/ssonnni/Team_Fresh/tree/main/teamfresh-react/src/pages)
 - index.js
-- [상단 메뉴 클릭 시 이동하는 페이지 ](https://github.com/ssonnni/Team_Fresh/tree/main/teamfresh-react/src/pages/nav)
+* [상단 메뉴 클릭 시 이동하는 페이지 ](https://github.com/ssonnni/Team_Fresh/tree/main/teamfresh-react/src/pages/nav)
 - Business.js
 - Service.js
 - Recruit.js
