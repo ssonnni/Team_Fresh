@@ -115,37 +115,32 @@ const Delivery = () => {
   const searchDeliveryArea = async () => {
     try {
       let addrBasic = document.querySelector('#roadAddress').value;
-      const res = await fetch(
+
+      fetch(
         'https://tmsapidev.teamfresh.co.kr/api/delivery/searchDeliveryAreaForTest',
         {
           method: 'POST',
-          headers: {
-            Host: 'https://tmsapidev.teamfresh.co.kr',
-            Accept: 'application/json',
-            'Content-Type': 'application/json',
-          },
           body: JSON.stringify({
             addrBasic: addrBasic,
           }),
         }
-      ).then(response => {response.text()})
-      .then(res => {console.log(res)})
-      ;
-      console.log(res);
-      const result = res;
-      if (result.result) {
-        const data = result;
+      )
+        .then((response) => response.json())
+        .then((result) => {
+          if (result.result) {
+            const data = result;
 
-        if (data.delyverYn === '1') {
-          setDeliveryAreaYn(true);
-          setIsDeliveryAreaYnModal(true);
-        } else {
-          setDeliveryAreaYn(false);
-          setIsDeliveryAreaYnModal(true);
-        }
-      } else {
-        alert('에러가 발생하였습니다. 다시 시도해 주세요');
-      }
+            if (data.delyverYn === '1') {
+              setDeliveryAreaYn(true);
+              setIsDeliveryAreaYnModal(true);
+            } else {
+              setDeliveryAreaYn(false);
+              setIsDeliveryAreaYnModal(true);
+            }
+          } else {
+            alert('에러가 발생하였습니다. 다시 시도해 주세요');
+          }
+        });
     } catch (e) {
       console.error(e);
       alert('조회중에 에러가 발생했습니다. 새로고침 후 다시 시도해주세요.');
